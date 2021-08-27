@@ -12,7 +12,7 @@ import logo from '../icons8-casa-24.png'
             <nav>
                 <ul>
                     <li>
-                    <img src={logo} alt="casa" />
+                    {/* <img src={logo} alt="casa" /> */}  
                     <Link to='/'>Home</Link>
                     </li>
                     <li>

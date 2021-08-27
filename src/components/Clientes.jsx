@@ -1,27 +1,43 @@
 import React from 'react';
 import '../components/layout/Cliente.css'
 import logo from '../icons8-pesquisar-24.png'
+import PageTitle from '../views/PageTitle';
+
 
 const Clientes = (props) => {
       return(
+            <div className="principal">
+              <PageTitle title="Cliente"/>
+                 <div className="Content">
+                  
+                   <input id="input_search"
+                    type="text"
+                     placeholder="Digite o nome do Cliente" />
 
-          <div className="Cliente">
-                  <input id="input_search" type="text" placeholder="Digite o nome do Cliente" />
-                  <img src={logo} id="img_logo" alt="logo_search"/>
-                
-                <form id="form-client" action=""> 
-                    <label htmlFor=""  >Nome</label>
-                    <input type="text" />
-                    <label htmlFor=""  >CPF</label>
-                    <input type="text" />
-                    <label htmlFor="">Idade</label>
-                    <input type="text" />
-                    <label htmlFor="">Endereço</label>
-                    <input type="text" />
-                    <label htmlFor="">Nome</label>
-                    <input type="text" />
-
-                </form>     
+                      <table className="table">  
+                          <tr className="tr_head">
+                             <th>ID</th>
+                             <th>Nome</th>
+                             <th>Idade</th>
+                             <th>Localidade</th>
+                             <th>Setor</th>
+                          </tr>
+                          <tr>
+                             <th>1</th>
+                             <th>Roberto Silva</th>
+                             <th>45</th>
+                             <th>São Paulo</th>
+                             <th>Alimentos</th>
+                          </tr>
+                          <tr>
+                             <th>2</th>
+                             <th>Ricardo Silva</th>
+                             <th>24</th>
+                             <th>São Paulo</th>
+                             <th>Serviços</th>
+                          </tr>
+                     </table>
+                </div>
             </div>
       )
 }
